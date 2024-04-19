@@ -1,32 +1,39 @@
 body {
     border: 1px solid black;
-    width: 90%;
+    width: 99%;
     height: 1000px;
+    background: url(https://th.bing.com/th/id/R.23fbe0242656e33199deb49e0fc565a5?rik=uKLaq%2fUBYMg%2faA&pid=ImgRaw&r=0) no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .topBar{
     position: absolute;
     padding-top:17px;
-    width:90%;
+    width:99%;
     background: transparent;
     display: flex;
     justify-content: space-between;
     z-index: 100;
     margin-top: 0%;
+    background-color: rgb(169, 13, 133);
+    height: 17%;
 }
 .logo{
     left: 10px;
+    width: auto;
 }
 .navbar a {
-    font-size:20px;
-    color: rgb(2, 2, 2);
+    font-size:30px;
+    color: rgb(242, 234, 234);
     text-decoration: none;
     margin-right: 40px;
     cursor: pointer;
 }
 .navbar a:hover {
     text-decoration: underline;
+
 }
-.pic{
+.video{
     margin-top: 180px;
     margin-left: 450px;
     width: 300px;
@@ -43,8 +50,8 @@ aside{
     height: 200px;
     object-fit: cover;
     position: absolute; 
-    top: 76%;
-    left: 70%;
+    top: 85%;
+    left: 80%;
     transform: translate(-50%, -50%);
 }
 hr{
@@ -55,16 +62,20 @@ hr{
 }
 .link{
     position: absolute;
-    left: 35%;
-    top: 140%
+    left: 25%;
+    top: 140%;
+    font-size: 20px;
+    color: #ededed;
 }
 .nav a:hover{
     text-decoration: underline;
 }
-.adress{
+.address{
     position: absolute;
     left: 20px;
-    top: 160%;
+    color: #ededed;
+    font-size: 20px;
+    
 }
 .facebook{
     position: absolute;
@@ -87,8 +98,32 @@ hr{
     top: 140%;
     height: 100px;
 }
-.number.img{
+.number{
     position: absolute;
-    top: 140%;
-    left: 180px;
+    top: 158%;
+    left: 250px;
 }
+
+.AboutMe  >body{
+    border: 1px solid black;
+    width: 99%;
+    height: 1000px;
+    background: url(https://th.bing.com/th/id/R.23fbe0242656e33199deb49e0fc565a5?rik=uKLaq%2fUBYMg%2faA&pid=ImgRaw&r=0) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #ededed;
+    font-size: 20px;
+
+}
+
+.contact   >body{
+    border: 1px solid black;
+    width: 99%;
+    height: 1000px;
+    background: url(https://th.bing.com/th/id/R.23fbe0242656e33199deb49e0fc565a5?rik=uKLaq%2fUBYMg%2faA&pid=ImgRaw&r=0) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #ededed;
+    font-size: 50px;
+}
+
