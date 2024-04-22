@@ -11,30 +11,35 @@
     <h1>CONTACT DETAILS</h1>
     </div>
     <div>
-        <p>
-            MOBILE NUMBER : 0642988103
-        </p>
+    <form id="contactForm" action="https://formspree.io/f/xjvnjeor" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="Alungile" required>
+        <br>
+    </div>
+    <div> <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" value="Mbuthuma" required>
+        <br>
     </div>
     <div>
-        <p>
-            EMAIL ADDRESS : alungilembuthuma0320@gmail.com
-        </p>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="alungilembuthuma0320@gmail.com" required>
+        <br>
     </div>
     <div>
-        <p>
-            FACEBOOK  :  Alungile Mbuthuma
-        </p>
+        <label for="phone">Phone:</label>
+        <input type="phone" id="number" value="064 298 8103" required>
+        <br>
     </div>
     <div>
-        <p>
-            LINKEDIN  : "https://www.linkedin.com/in/alungile-mbuthuma-888045280/
-        </p>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4"  required></textarea>
+        <br>
     </div>
     <div>
-         <p>
-            INSTAGRAM  :  @alungile_mbuthuma04
-
-         </p>
+        <button type="submit">Send Message</button>
+        <br>
     </div>
+      </form>
+      </div>
 </body>
 </html>
