@@ -1,94 +1,195 @@
+@import url('https://fonts.googleapis.com/css?=Josefin+Sans:200,400,600display=swap');
+* {
+  box-sizing: border-box;
+}
 body {
-    border: 1px solid black;
-    width: 90%;
-    height: 1000px;
+background-image: url("./images/favicon-32x32.png");
+
+}    
+
+.container {
+  display: flex;
+  min-height: 100vh;
 }
-.topBar{
-    position: absolute;
-    padding-top:17px;
-    width:90%;
-    background: transparent;
-    display: flex;
-    justify-content: space-between;
-    z-index: 100;
-    margin-top: 0%;
+
+ .inner-container{
+  width: 450px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 15%;
+  left: 8%;
+  height: 95%;
+  
+ }
+ .logo{
+  position: absolute;
+  top: 0%;
+  left: 15%;
+  width: 100px;
+  margin-top: 18%;
+ }
+
+ .hero{ 
+  width: 350px;
+  height: 70%;
+  position: absolute;
+  top: 15%;
+  left: 130%;
+ }
+
+ h1{
+  color: hsl(0,6%,24%);
+  font-style: normal;
+  font-size: 50px;
+  letter-spacing: 10px;
+  line-height: 1;
+  margin-bottom: 0;
+  transform: translate(-100%);
+  text-transform: uppercase;
+  animation: comeinleft 0.5s ease forwards;
+  position: absolute;
+  top: 27%;
+  left: 68%;
+  margin-top: 0;
+ }
+  
+ h1 span{
+   color: hsl(0,36%,70%);
+   font-weight: 100px;
+   position: absolute;
+   top: 0%;
+   left: 15%;
+ }
+
+ input{
+  background-color: transparent;
+  border: 1px solid hsl(0,36%,70%);
+  border-radius: 50px;
+  font-size: 16px;
+  padding: 15px 30px;
+  height: 55px;
+  width: 100%;
+  margin-top: 0%;
+ }
+ input:focus{
+  outline: none;
+  border-width: 2px;
+  box-shadow: 0px 0px 10px  hsl(0,36%,70% 0.5);
+  margin-top: 35%;
+ }
+  input::placeholder{
+    color: hsl(0,36%,70%);
+  } 
+
+  form,error input{
+    border: 2px solid hsl(0,93%,68%);
+ 
+ }
+ button{
+  background-image: linear-gradient(135%), hsl(0,80%,86%), hsl(0,74%,74%);
+  box-shadow: 2px 5px 10px hsla(0,36%,70%,00.5s);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: opacity 0.2s ease;
+  height: 55px;
+  width: 100px;
+
+ }
+ button:hover{
+  opacity: 0.6;
+ } 
+
+ error-icon{
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 110px;
+ }
+
+ form.error .error-icon{
+  display: block;
+ }
+ small{
+  color: hsl(0,96%,68%);
+  display: none;
+  margin-top: 15px;
+  margin-left: 30px;
+ }
+ form.error small{
+  display: block;
+ }
+ /* Animation */
+@keyframes comeinleft{
+  0%{
+    transform: translateX(0);
+}}
+@keyframes comeinright{
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
-.logo{
-    left: 10px;
-}
-.navbar a {
-    font-size:20px;
-    color: rgb(2, 2, 2);
-    text-decoration: none;
-    margin-right: 40px;
-    cursor: pointer;
-}
-.navbar a:hover {
-    text-decoration: underline;
-}
-.pic{
-    margin-top: 180px;
-    margin-left: 450px;
-    width: 300px;
+ @media scrren and (max-width:600px) {
+  .logo{
+    margin: 30px 0;
+    width: 100px;
+
+  }
+ }
+ .bg-mobile{
+  display: block;
+  margin-left: -40px;
+  margin-right: -40px;
+  width: calc(100% + 80px);
+ }
+ h1{
+  font-size: 40px;
+ }
+ .left{
+    width: 100%;
+ }
+ .right{
+  display: none;
+ }
+ 
+p {
+    color: hsl(0,36%,70%);
+    line-height: 26px;
+    margin: 30px 0;
+    transform: translateX(-100%);
+    opacity: 0;
+    animation: comeinright 0.5s ease forwards;
+    text-align: center;
+    margin-top: 2%;
 }
 aside{
+    width: 400px;
+    margin: 10px;
+    padding: 5px;
+    float: left;
+    position: absolute;
+    top: 52%;
+    left: 15%;
+}
+#form{
     width: 300px;
     margin: 10px;
     padding: 5px;
     float: left;
-}
-.circle-image{
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    position: absolute; 
-    top: 76%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-}
-hr{
-    border: 1px solid black;
-    width: 100%;
-    top: 100%;
-    
-}
-.link{
     position: absolute;
-    left: 35%;
-    top: 140%
+    top: 72%;
+    left: 15%; 
+    height: 65px;
 }
-.nav a:hover{
-    text-decoration: underline;
-}
-.adress{
-    position: absolute;
-    left: 20px;
-    top: 160%;
-}
-.facebook{
-    position: absolute;
-    left: 20px;
-    top: 160%
-}
-.instagram{
-    position: absolute;
-    left: 90px;
-    top: 160%
-}
-.twitter{
-    position: absolute;
-    left: 160px;
-    top: 160%;
-}
-.map{
-    position: absolute;
-    left: 64%;
-    top: 140%;
-    height: 100px;
-}
-.number.img{
-    position: absolute;
-    top: 140%;
-    left: 180px;
+.deco{
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  height: 70%;
 }
